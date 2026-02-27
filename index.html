@@ -1,13 +1,83 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mi-app</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Landing Page Simple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">MiMarca</a>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Bienvenido a tu Próximo Proyecto</h1>
+            <p>Creamos soluciones digitales simples y efectivas para hacer crecer tu negocio.</p>
+            <a href="#contacto" class="btn">Empezar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <h2>¿Por qué elegirnos?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Rápido</h3>
+                    <p>Optimizado para cargar en milisegundos y ofrecer la mejor experiencia.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Seguro</h3>
+                    <p>Protegemos tus datos con los estándares más altos de seguridad.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fácil de Usar</h3>
+                    <p>Interfaces intuitivas diseñadas pensando en el usuario final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MiMarca. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-block">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+</body>
 </html>
